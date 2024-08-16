@@ -1,294 +1,525 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
-
-    body {
-        overflow: hidden;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: 100%;
-        background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
-        background-position: center center;
-    }
-
-    .paper {
-        background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
-        background-size: 500px;
-        background-position: center center;
-        padding: 20px 100px;
-        transform: rotateZ(-5deg);
-        box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
-        position: absolute;
-    }
-
-    .paper.heart {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        padding: 0;
-        border-radius: 50%;
-    }
-
-    .paper.image {
-        padding: 10px;
-    }
-
-    .paper.image p {
-        font-size: 30px;
-    }
-
-    img {
-        max-height: 200px;
-        width: 100%;
-        user-select: none;
-    }
-
-    .paper.heart::after {
-        content: "";
-        background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: 150px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        opacity: 0.6;
-    }
-
-    .paper:nth-of-type(3n) {
-        background-position: left top;
-    }
-
-    p {
-        font-family: 'Zeyada';
-        font-size: 50px;
-        color: rgb(0, 0, 100);
-        opacity: 0.75;
-        user-select: none;
-
-    }
-
-    .loveTEXT {
-        font-family: Arial, sans-serif;
-        color: #e91e63;
-        font-size: 36px;
-    }
-
-    .loverbtn {
-        font-size: 20px;
-        padding: 12px 24px;
-        margin: 10px;
-        border: none;
-        border-radius: 20px;
-        background-color: #ff4081;
-        color: #fff;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .btn-group {
-        text-align: center;
-    }
-
-    #popup {
-        display: none;
-        background-color: #f9f9f9;
-        border: 1px solid #ccc;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 999;
-        display: none;
-        background-color: #fff;
-        border: 1px solid #e91e63;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        padding: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 999;
-        font-family: 'Dancing Script', cursive;
-        font-size: 24px;
-        color: #e91e63;
-    }
-
-    #popup.fade-in {
-        animation: fadeIn 0.3s ease;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-</style>
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>sorry ❤️</title>
-    <link rel='stylesheet'
-        href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-</head>
+	<title>Grocery store by CosmiC</title>
+    <div class="visme_d" data-title="Untitled Project" data-url="1jvpdkvw-untitled-project" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="77641"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+	<link rel="icon" type="image/icon" href="image/favicon.png">
 
+<!-- Code for font awesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Code for font awesome cdn -->
+
+<!-- Code for linking css file -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Code for linking css file -->
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
 <body>
 
-    <div id="popup" style="width: 390px;">
-        I can’t express how sorry I am. yur happiness means everything to me, and I’ll do whatever it takes to earn back yur trust and make u smile again!❤️❤️❤️ ~@moin
-        <img src="moin.jpeg">
-            style="aspect-ratio: 1/1">
+<!-- header section -->
+<header class="header">
+	<a href="#" class="logo"> <i class="fa fa-shopping-basket" aria-hidden="true"></i> Grocery</a>
+
+
+<nav class="navbar">
+	<a href="#home">home</a>
+	<a href="#features">features</a>
+	<a href="#products">products</a>
+	<a href="#categories">categories</a>
+	<a href="#review">review</a>
+	<a href="#blogs">blogs</a>
+</nav>
+
+
+<div class="icons">
+	<div class="fa fa-bars" id="menu-btn"></div>
+	<div class="fa fa-search" id="search-btn"></div>
+	<div class="fa fa-shopping-cart" id="cart-btn"></div>
+	<div class="fa fa-user" id="login-btn"></div>
+</div>
+
+
+<form class="search-form">
+	<input type="search" id="search-box" placeholder="Search Here.....">
+	<label for="search-box" class="fa fa-search"></label>
+</form>
+
+
+
+<div class="shopping-cart">
+	<div class="box">
+		<i class="fa fa-trash"></i>
+		<img src="image/cart-img-1.png">
+		<div class="content">
+			<h3>watermelon</h3>
+			<span class="price">$1.99/-</span>
+			<span class="quantity">Qty : 1</span>
+		</div>
+	</div>
+<div class="box">
+		<i class="fa fa-trash"></i>
+		<img src="image/cart-img-2.png">
+		<div class="content">
+			<h3>onion</h3>
+			<span class="price">$3.99/-</span>
+			<span class="quantity">Qty : 1</span>
+		</div>
+	</div>
+
+	<div class="box">
+		<i class="fa fa-trash"></i>
+		<img src="image/cart-img-3.png">
+		<div class="content">
+			<h3>chicken</h3>
+			<span class="price">$5.99/-</span>
+			<span class="quantity">Qty : 1</span>
+		</div>
+
+	</div>
+
+
+<div class="total"> total : $11.97/- </div>
+<a href="#" class="btn">Checkout</a>
+
+</div>
+
+
+
+<form action="#" class="login-form">
+	<h3>LOGIN NOW</h3>
+	<input type="email" placeholder="your email" class="box">
+	<input type="password" placeholder="your password" class="box">
+
+<p>Forget Your Password <a href="#"> Click Here </a></p>
+<p>Don't Have An Account <a href="#"> Create Now </a></p>
+
+
+	<input type="submit" value="Login Now" class="btn">
+</form>
+
+
+
+</header>
+<!-- header section -->
+
+
+
+<!-- banner section -->
+<section class="home" id="home">
+	<div class="content">
+		<h3>Fresh And <span>Organic</span> Product For You</h3>
+		<p>This Website Is Designed By CosmiC So That Everyone Can Use In An Easy Way </p>
+
+		<a href="#" class="btn">shop now</a>
+	</div>
+</div>
+</section>
+<!-- banner section -->
+
+
+<!-- our features section -->
+<section class="features" id="features">
+	<h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+    	<div class="box">
+    		<img src="image/feature-img-1.png">
+    		<h3>Fresh And Organic</h3>
+
+    		<p>Indulge In The Rich,Authentic Tastes Of Our Gourment Collection,Where Quality Meets Culinary Delight</p>
+
+    		<a href="#" class="btn">read more</a>
+    	</div>
+
+    	<div class="box">
+    		<img src="image/feature-img-2.png">
+    		<h3>Free Delivery</h3>
+
+    		<p>Seamless checkout, secure payments – because grocery shopping should be as smooth as butter From cart to doorstep!”</p>
+
+    		<a href="#" class="btn">read more</a>
+    	</div>
+
+    	<div class="box">
+    		<img src="image/feature-img-3.png">
+    		<h3>Easy Payments</h3>
+
+    		<p>“Experience The Pinnacle Of Convenience With Our Grocery Delivery Service: Where The Freshest The Smoothest Transactions</p>
+
+    		<a href="#" class="btn">read more</a>
+    	</div>
     </div>
 
-    <div>
-
-        <!-- <a href="https://manaschool.in/"> -->
-        <b class="loveTEXT">Will You Accept My sorry?</b>
-        <!-- </a> -->
-        <div class="btn-group">
-            <button id="yes-btn" class="loverbtn">Yes</button>
-            <button id="no-btn" class="loverbtn">No</button>
-        </div>
-    </div>
-
-    <!-- Saravanan Code -->
-    <!-- https://codepen.io/devsaro/pen/wvYPaRg -->
-    <div class="paper heart">
-    </div>
-    <div class="paper image">
-        <p>I LOVE YOU</p>
-        <img src="moin3.jpeg">
-    </div>
-    <div class="paper image">
-        <p> And I Am Sorry</p>
-        <p>For My Past Mistakes 🥹😔 </p>
-        <img src="moin4.jpeg">
-    </div>
-    <div class="paper image">
-        <p>How can be </p>
-        <p> someone so cute ❤️ </p>
-        <img src="moin2.jpeg">
-    </div>
-    <div class="paper">
-        <p class="p1"> and My Favorite</p>
-        <p class="p2">Person 😍</p>
-    </div>
-    <div class="paper">
-        <p class="p1">You are Cute </p>
-        <p class="p1">Amazing <span style="color: red !important;">❤️</span></p>
-    </div>
-    <div class="paper">
-        <p class="p1">Drag the papers to move!</p>
-        <p> A small sorry note for you❤️</p>
-    </div>
-    <!-- javascript file -->
-    <!-- <script src="script.js"></script> -->
-    <script>
-        let highestZ = 1;
-        class Paper {
-            holdingPaper = false;
-            mouseTouchX = 0;
-            mouseTouchY = 0;
-            mouseX = 0;
-            mouseY = 0;
-            prevMouseX = 0;
-            prevMouseY = 0;
-            velX = 0;
-            velY = 0;
-            rotation = Math.random() * 30 - 15;
-            currentPaperX = 0;
-            currentPaperY = 0;
-            rotating = false;
-            init(paper) {
-                document.addEventListener('mousemove', (e) => {
-                    if (!this.rotating) {
-                        this.mouseX = e.clientX;
-                        this.mouseY = e.clientY;
-                        this.velX = this.mouseX - this.prevMouseX;
-                        this.velY = this.mouseY - this.prevMouseY;
-                    }
-                    const dirX = e.clientX - this.mouseTouchX;
-                    const dirY = e.clientY - this.mouseTouchY;
-                    const dirLength = Math.sqrt(dirX * dirX + dirY * dirY);
-                    const dirNormalizedX = dirX / dirLength;
-                    const dirNormalizedY = dirY / dirLength;
-                    const angle = Math.atan2(dirNormalizedY, dirNormalizedX);
-                    let degrees = 180 * angle / Math.PI;
-                    degrees = (360 + Math.round(degrees)) % 360;
-                    if (this.rotating) {
-                        this.rotation = degrees;
-                    }
-                    if (this.holdingPaper) {
-                        if (!this.rotating) {
-                            this.currentPaperX += this.velX;
-                            this.currentPaperY += this.velY;
-                        }
-                        this.prevMouseX = this.mouseX;
-                        this.prevMouseY = this.mouseY;
-                        paper.style.transform = `translateX(${this.currentPaperX}px) translateY(${this.currentPaperY}px) rotateZ(${this.rotation}deg)`;
-                    }
-                })
-                paper.addEventListener('mousedown', (e) => {
-                    if (this.holdingPaper) return;
-                    this.holdingPaper = true;
-                    paper.style.zIndex = highestZ;
-                    highestZ += 1;
-                    if (e.button === 0) {
-                        this.mouseTouchX = this.mouseX;
-                        this.mouseTouchY = this.mouseY;
-                        this.prevMouseX = this.mouseX;
-                        this.prevMouseY = this.mouseY;
-                    }
-                    if (e.button === 2) {
-                        this.rotating = true;
-                    }
-                });
-                window.addEventListener('mouseup', () => {
-                    this.holdingPaper = false;
-                    this.rotating = false;
-                });
-            }
-        }
-        const papers = Array.from(document.querySelectorAll('.paper'));
-        papers.forEach(paper => {
-            const p = new Paper();
-            p.init(paper);
-        });
+</section>
+<!-- our features section -->
 
 
 
-        const noButton = document.getElementById("no-btn");
-        const yesButton = document.getElementById("yes-btn");
-        const popup = document.getElementById("popup");
+<!-- our products section -->
+<section class="products" id="products">
+	<h1 class="heading"> our <span>products</span></h1>
 
-        noButton.addEventListener("mouseover", () => {
-            noButton.style.position = "absolute";
-            noButton.style.left = Math.random() * 80 + "vw";
-            noButton.style.top = Math.random() * 80 + "vh";
-        });
+	<div class="swiper product-slider">
+		
+<div class="swiper-wrapper">
+	<div class="swiper-slide box">
+		<img src="image/product-1.png">
+		<h1>fresh orange</h1>
+		<div class="price"> $4.99/- - 10.99</div>
+		<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+		<a href="" class="btn">add to cart</a>
+	</div>
 
-        yesButton.addEventListener("click", () => {
-            popup.style.display = "block";
-        });
 
-        // Hide the popup initially
-        popup.style.display = "none";
+	<div class="swiper-slide box">
+		<img src="image/product-2.png">
+		<h1>fresh onion</h1>
+		<div class="price"> $4.99/- - 10.99</div>
+		<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+		<a href="" class="btn">add to cart</a>
+	</div>
 
-    </script>
+
+<div class="swiper-slide box">
+		<img src="image/product-3.png">
+		<h1>fresh meat</h1>
+		<div class="price"> $4.99/- - 10.99</div>
+		<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+		<a href="" class="btn">add to cart</a>
+	</div>
+
+
+<div class="swiper-slide box">
+		<img src="image/product-4.png">
+		<h1>fresh cabbage</h1>
+		<div class="price"> $4.99/- - 10.99</div>
+		<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+		<a href="" class="btn">add to cart</a>
+	</div>
+
+
+
+</div>
+
+	</div>
+
+
+
+		<div class="swiper product-slider">
+		
+<div class="swiper-wrapper">
+	<div class="swiper-slide box">
+		<img src="image/product-5.png">
+		<h1>fresh potato</h1>
+		<div class="price"> $4.99/- - 10.99</div>
+		<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+		<a href="" class="btn">add to cart</a>
+	</div>
+
+
+	<div class="swiper-slide box">
+		<img src="image/product-6.png">
+		<h1>fresh avacado</h1>
+		<div class="price"> $4.99/- - 10.99</div>
+		<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+		<a href="" class="btn">add to cart</a>
+	</div>
+
+
+<div class="swiper-slide box">
+		<img src="image/product-7.png">
+		<h1>fresh carrot</h1>
+		<div class="price"> $4.99/- - 10.99</div>
+		<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+		<a href="" class="btn">add to cart</a>
+	</div>
+
+
+<div class="swiper-slide box">
+		<img src="image/product-8.png">
+		<h1>fresh lemon</h1>
+		<div class="price"> $4.99/- - 10.99</div>
+		<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+		<a href="" class="btn">add to cart</a>
+	</div>
+
+
+
+</div>
+
+	</div>
+</section>
+<!-- our products section -->
+
+
+
+<!-- our Categories section -->
+<section class="categories" id="categories">
+	<h1 class="heading"> product <span>categories</span></h1>
+
+	<div class="box-container">
+		<div class="box">
+			<img src="image/cat-1.png">
+			<h3>Vegetables</h3>
+			<p>upto 45% off</p>
+			<a href="#" class="btn">shop now</a>
+		</div>
+
+				<div class="box">
+			<img src="image/cat-2.png">
+			<h3>fresh fruits</h3>
+			<p>upto 20% off</p>
+			<a href="#" class="btn">shop now</a>
+		</div>
+
+				<div class="box">
+			<img src="image/cat-3.png">
+			<h3>dairy products</h3>
+			<p>upto 35% off</p>
+			<a href="#" class="btn">shop now</a>
+		</div>
+
+				<div class="box">
+			<img src="image/cat-4.png">
+			<h3>fresh meat</h3>
+			<p>upto 30% off</p>
+			<a href="#" class="btn">shop now</a>
+		</div>
+	</div>
+</section>
+<!-- our Categories section -->
+
+
+
+
+<!-- Review section -->
+<section class="review" id="review">
+	<h1 class="heading"> Customer's <span>review</span></h1>
+
+	<div class="swiper review-slider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide box">
+				<img src="image/pic-1.png">
+				<p>As a working parent, this site has been a lifesaver. The easy payment system means I can zip through checkout, and the delivery is always on time.</p>
+				<h3>william smith</h3>
+						<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+			</div>
+
+						<div class="swiper-slide box">
+				<img src="image/pic-2.png">
+				<p>“Ordering groceries online has never been easier. The website’s layout makes it quick to find what I need, and the customer service is top-notch.”</p>
+				<h3>elizabeth taylor</h3>
+						<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+			</div>
+
+			<div class="swiper-slide box">
+				<img src="image/pic-3.png">
+				<p>“I’m always impressed by the variety of fresh produce and organic options available. The website is easy to navigate and delivers on time.”</p>
+				<h3>oliver blackwood</h3>
+						<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+			</div>
+
+			<div class="swiper-slide box">
+				<img src="image/pic-4.png">
+				<p>“The weekly deals are a real money-saver, and I’ve never had an issue with the quality of the food. Everything arrives fresh and well-packaged.”</p>
+				<h3>jennifer loppez</h3>
+						<div class="stars">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half"></i>
+		</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Review section -->
+
+
+
+<!-- Blog section -->
+<section class="blogs" id="blogs">
+	<h1 class="heading"> Our <span>Blogs</span></h1>
+
+	<div class="box-container">
+		<div class="box">
+			<img src="image/blog-1.jpg">
+			<div class="content">
+				<div class="icons">
+					<a href="#"><i class="fa fa-user"> By Emily </i></a>
+					<a href="#"><i class="fa fa-calendar"> 1st May, 2024 </i></a>
+				</div>
+				<h3>Fresh And Organic Vegetables And Fruits</h3>
+				<p> Misfits Market’s commitment to sustainability is why I shop there. Fresh, organic groceries every time!</p>
+				<a href="#" class="btn">read more</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="image/blog-2.jpg">
+			<div class="content">
+				<div class="icons">
+					<a href="#"><i class="fa fa-user"> By George </i></a>
+					<a href="#"><i class="fa fa-calendar"> 9th May, 2022 </i></a>
+				</div>
+				<h3>Fresh And Organic Vegetables And Fruits</h3>
+				<p>Boxed offers great prices on bulk items without a membership fee. Saves me a trip to the store!</p>
+				<a href="#" class="btn">read more</a>
+			</div>
+		</div>
+
+
+		<div class="box">
+			<img src="image/blog-3.jpg">
+			<div class="content">
+				<div class="icons">
+					<a href="#"><i class="fa fa-user"> By ava </i></a>
+					<a href="#"><i class="fa fa-calendar"> 2nd May, 2023 </i></a>
+				</div>
+				<h3>Fresh And Organic Vegetables And Fruits</h3>
+				<p>Misfits Market’s commitment to sustainability is why I shop there. Fresh, organic groceries every time!</p>
+				<a href="#" class="btn">read more</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Blog section -->
+
+
+
+<!-- footer section -->
+<section class="footer">
+	<div class="box-container">
+		<div class="box">
+			<h3> Groco <i class="fa fa-shopping-basket"></i></h3>
+			<p>Feel Free To Follow Us On Our Social Media Hndlers All The Links Are Given Below.</p>
+
+			<div class="share">
+				<a href="https://wa.me/qr/JHMCQLX73DZEN1" class="fa fa-whatsapp"></a>
+				<a href=" https://x.com/cosmic1350?t=iOAcDVGl-MYN_6mtiaxQ7g&s=08" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/_pvt_cosmic_?igsh=MWlxc2Z0bXNieTl6bg==" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+			</div>
+		</div>
+
+		<div class="box">
+			<h3> Contact Info </h3> 
+			<a href="#" class="links"> <i class="fa fa-phone"></i> +91 7843072359</a>
+			<a href="#" class="links"> <i class="fa fa-phone"></i> +91 8097629277</a>
+			<a href="#" class="links"> <i class="fa fa-envelope"></i> cosmicns@gmail.com</a>
+			<a href="#" class="links"> <i class="fa fa-map-marker"></i> mumbai, india</a>
+			
+		</div>
+
+				<div class="box">
+			<h3> Quick Links </h3> 
+			<a href="#" class="links"> <i class="fa fa-arrow-right"></i> Home</a>
+			<a href="#" class="links"> <i class="fa fa-arrow-right"></i> Features</a>
+			<a href="#" class="links"> <i class="fa fa-arrow-right"></i> Products</a>
+			<a href="#" class="links"> <i class="fa fa-arrow-right"></i> Categories</a>
+			<a href="#" class="links"> <i class="fa fa-arrow-right"></i> Review</a>
+			<a href="#" class="links"> <i class="fa fa-arrow-right"></i> Blogs</a>
+		</div>
+
+
+		<div class="box">
+			<h3> Newsletter </h3> 
+            <p>Subscribe For Latest Updates</p>
+            <input type="email" placeholder="Your Email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img">
+		</div>
+
+
+	</div>
+
+
+<div class="credit">Created By <span>CosmiC</span> | All Rights Reserved</div>
+
+
+</section>
+<!-- footer section -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
 </body>
-
 </html>
